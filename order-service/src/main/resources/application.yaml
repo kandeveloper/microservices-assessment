@@ -12,3 +12,16 @@ spring:
 notification:
   service:
     url: http://localhost:8081
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+  api-docs:
+    path: /v3/api-docs
+
+logging:
+    level:
+      root: INFO
+      com.ecommerce: DEBUG  # Change to match your base package name (e.g., com.ecommerce.orderservice)
+      org.springframework.web: DEBUG
